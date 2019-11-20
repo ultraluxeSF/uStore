@@ -2992,50 +2992,39 @@ h3 {
   height: 350px;
 }
 .content {
-  /* width: 100%; */
-  float: left;
   position: relative;
-  left: 50%;
   overflow: visible;
 }
 .specifications {
-  height: 450px;
-  float: left;
+  height: 600px;
   position: relative;
-  left: -50%;
   /* overflow: hidden; */
   border-left: 1px solid #77b900;
   padding-left: 30px;
   padding-top: 30px;
   padding-bottom: 100px;
-  margin-left: 630px;
+  margin-left: 5%;
 }
 .specifications li {
   margin-top: 5px;
   margin-left: 20px;
-  width: 400px;
+  width: 275px;
   font-weight: 300;
   letter-spacing: 0.2px;
   list-style: none;
-  margin-right: 295px;
-}
-.specifications li:before {
-  content: "○";
-  color: #77b900;
-  font-weight: bold;
-  display: inline-block;
-  width: 20px;
+  margin-right: 0px;
 }
 .spec-img {
-  position: absolute;
-  width: 280px;
+  position: relative;
+  width: 250px;
   height: auto;
-  margin-top: 140px;
-  margin-left: -28%;
+  margin-top: 10px;
+  margin-left: -30%;
+  margin-right: 0;
   transition: transform 2.5s;
 }
   #price {
-  font-size: 27pt;
+  font-size: 26pt;
   position: absolute;
   color: #77b900;
   font-weight: 600;
@@ -3044,8 +3033,8 @@ h3 {
   position: absolute;
   font-size: 12pt;
   font-weight: 300;
-  margin-top: 53px;
-  margin-left: 210px;
+  margin-top: 40px;
+  margin-left: 200px;
 }
 .reference {
   background: inherit;
@@ -3062,40 +3051,34 @@ h3 {
 .about-div {
   background: inherit;
   text-align: center;
-  height: 830px;
+  height: 910px;
   margin-top: 40px;
   border-top: 1px solid #77b900;
-  margin-top: 0px;
 }
 h4 {
   font-size: 30pt;
 }
 .about-text {
   margin-top: 30px;
-  font-size: 12pt;
+  font-size: 11pt;
   font-weight: 300;
   letter-spacing: 0.5px;
-  line-height: 25px;
+  line-height: 21px;
   text-align: left;
-  margin-left: 50%;
   padding-left: 15px;
-  border-left: 1px solid #77b900;
-  margin-right: 50px;
-  /* border-left: 1px solid #77b900; */
+  margin-left: 7%;
 
 }
 .img-referencing {
-  font-size: 12pt;
+  margin-top: 30px;
+  font-size: 11pt;
   font-weight: 300;
   letter-spacing: 0.5px;
-  line-height: 25px;
+  line-height: 21px;
   text-align: left;
-  border-left: 1px solid #77b900;
-  margin-left: 50%;
+  margin-left: 7%;
   padding-left: 15px;
-  width: 390px;
-  margin-top: 30px;
-  color: #aaa;
+  /* margin-right: 50px; */
 }
 #reference-about {
   font-weight: 300;
@@ -3129,16 +3112,16 @@ h4 {
   padding-bottom: 40px;
   text-align: center;
   display: block;
-  margin-top: 620px;
+  margin-top: 980px;
   border-top: 1px solid #555;
   transition: border 0.5s;
 }
   #us {
-  position: absolute;
-  width: 330px;
+  position: relative;
+  width: 200px;
   height: auto;
-  margin-top: 330px;
-  margin-left: -380px;
+  margin-top: 20px;
+  margin-left: 0px;
 }
 .buynow {
   display: block;
@@ -3183,5 +3166,75 @@ h4 {
 .right-align p {
   margin-top: 15px;
 }
+.form-control {
+    width: 300px;
+    padding: 10px 15px;
+    font-size: 0.8em;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+.form input {
+  margin-top: 15px;
+}
+.btn {
+  border: none;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 25px;
+  width: 325px;
+  padding: 10px;
+  font-size: 0.8em;
+  background-color: #77b900;
+  transition: background-color 0.5s ease;
+  outline: none;
+  display: block;
+  font-weight: 300;
+  color: #1b1b1d;
+}
+
+.form h1 {
+  color: #77d900;
+  transition: color 0.5s;
+}
+.form h2 {
+  font-weight: 300;
+}
+/* .order:hover .form h1 {
+  color: #77d900;
+  transition: color 0.5s;
+} */
+.icon-s1 {
+  width: 55px;
+  height: auto;
+  position: absolute;
+  transition: opacity 0.5s;
+}
+.order:hover .icon-s1{
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.card-id {
+  width: 350px;
+  display: inline-block;
+  font-size: 0.8em;
+}
+.card-num {
+  width: 192px;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  text-align: center;
+  margin-left: 0;
+}
+.card-cvv {
+  width: 60px;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  text-align: center;
+  margin: 0 auto;
+  margin-left: 10px;
+}
+
 
 }
