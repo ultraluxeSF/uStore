@@ -1,32 +1,50 @@
+/* Styles */
 html {
+  /* Use this font family for the whole document */
 font-family: 'Roboto', sans-serif;
+/* smooth scrolling effect */
 scroll-behavior: smooth;
 }
+/* Loading transition effect */
 @keyframes page-load {
-    from {
-        width:0;
-    }
-    to {
-        width:100%;
-    }
+  /* Start from 0 up to 100 */
+from {
+    width:0;
+}
+to {
+    width:100%;
+  }
 }
 .page-loading::before {
-    content:" ";
-    display:block;
-    position:fixed;
-    z-index:10;
-    height:1px;
-    width:100%;
-    top:0;
-    left:0;
-    background-color: #77b900;
-    animation: page-load ease-out 5s;
+  /* content of the loading bar */
+  content:" ";
+  /* display it on separate line */
+  display:block;
+  /* fixed position */
+  position:fixed;
+  /* make it appear above everything */
+  z-index:10;
+  /* 1pixel height */
+  height:1px;
+  /* full page width */
+  width:100%;
+  /* no distance from top */
+  top:0;
+  /* no distance from left */
+  left:0;
+  /* green background-color:  */
+  background-color: #77b900;
+  /* duration of the animation */
+  animation: page-load ease-out 5s;
 }
 /* NAVIGATION: HEADER */
 header *{
-  text-align: center !important;
+  /* align all the content of the header to center */
+  text-align: center;
+  /* make the header above everything but not loader which is above */
   z-index: 1;
 }
+/* Navigation Panel */
 nav {
   width: 100%;
   height: 40px;
@@ -35,9 +53,11 @@ nav {
   top: 0;
   left: 0;
   right: 0;
+  /* Prevent displaying the content if it exceeds the sizes of parent */
   overflow: hidden;
   position: fixed;
   display: block;
+  /* distance of child elements within the navigation panel */
   padding-top: 4px;
   padding-bottom: 5px;
 }
@@ -47,26 +67,35 @@ nav {
   width: 120px;
   height: 40px;
   background-color: none;
+  /* no borders */
   border: none;
+  /* have the same background color as parent */
   background-color: inherit;
+  /* regular font style */
   font-weight: normal;
+  /* color of text */
   color: #fff;
+  /* display no outline on pressing the button */
   outline: none;
 }
 
 a {
+  /* display no underlines of the link, which are set by default as such */
   text-decoration: none;
 }
 .headerhref {
   color: #fff;
+  /* font size */
   font-size: 11.5pt;
 }
 .headerhref-active {
   color: #77b900;
   font-size: 11.5pt;
 }
+/* the behaviour of element with this class when the mouse is over its area */
 .headerhref:hover {
   color: #77b900;
+  /* duration of transition, in this case the transition duration works only with color property */
   transition: color 0.5s;
 }
 .headerhref-active:hover {
@@ -75,14 +104,20 @@ a {
 }
 #logo1 {
   width: 25px;
+  /* height will have proportional size to width */
   height: auto;
+  /* position which ignores other elements' position */
   position: absolute;
+  /* distance from the top */
   margin-top: 8px;
+  /* distance from left */
   margin-left: -67px;
+  /* make object appear from left of the element's center point */
   float: left;
 }
 #logo1:hover {
   opacity: 0;
+  /* apply transition duration to all the properties */
   transition: 0.5s all;
 }
 #logo2 {
@@ -127,6 +162,7 @@ a {
   }
 .final__dropdown__menu{
   position: absolute;
+  /* display nothing until the dropdown parent is hovered */
   display: none;
   top: 100%;
   left: 0;
